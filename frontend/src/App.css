@@ -1,0 +1,113 @@
+.navBar {
+  font-weight: 600;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.jsonContainer {
+  border: 1px solid #ccc;
+  margin: 10px 0;
+  padding: 10px;
+  position: relative;
+}
+
+.jsonHeader {
+  display: flex;
+  justify-content: left;
+  cursor: pointer;
+  align-items: center;
+}
+
+.jsonHeaderDetails {
+  display: flex;
+  flex-direction: column;
+  margin-left: 25px;
+}
+
+.toggleIcon {
+  width: 0;
+  height: 0;
+  border-left: 6.5px solid transparent;
+  border-right: 6.5px solid transparent;
+  border-top: 10.5px solid #333;
+  transition: transform 0.3s ease;
+}
+
+.toggleIcon.expanded {
+  transform: rotate(0deg);
+}
+
+.toggleIcon.collapsed {
+  transform: rotate(-90deg);
+}
+
+.jsonDetailsExpanded {
+  padding: 10px;
+  border-top: 1px solid #ccc;
+  display: flex;
+  flex-flow: column;
+  gap: .5rem;
+}
+
+.jsonStatusCodeSuccess {
+  color: green;
+}
+
+.jsonStatusCodeError {
+  color: red;
+}
+
+.jsonStatusCode {
+  position: relative;
+  top: 26px !important;
+  right: 26px !important;
+  padding: 5px 10px;
+  box-shadow: 2px 2px 2px lightgray;
+  border-radius: 3px;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 12px;
+  transition: background-color 0.3s ease;
+}
+
+.method {
+  background-color:rgb(233, 233, 233);
+  border-radius: 2px;
+  padding: 1px;
+  box-shadow: 0.5px 0.5px 3px gray;
+}
+
+.details {
+  line-height: 28px;
+}
